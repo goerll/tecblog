@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TecBlog | Newsletter</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <link rel="icon" href="imagens/logo.png">
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div id="logo">
+                <h1 class="white">Tec<span class="orange">Blog</span></h1>
+            </div>
+            <div id="menu">
+                <a class="navbar-button" href="index.html">Home</a>
+                <a class="navbar-button" href="jogos.html">Jogos</a>
+                <a class="navbar-button" href="celulares.html">Celulares</a>
+                <a class="navbar-button" href="informatica.html">Informática</a>
+                <a class="navbar-button" href="eletronicos.html">Eletrônicos</a>
+                <a class="navbar-button active" href="Newsletter.html">Newsletter</a>
+            </div>
+        </div>
+        <div id="page-content">
+
+            <div>
+                <h1 class="page-heading">Newsletter</h1>
+                <p class="page-subheading">Se cadastre na nossa newsletter para receber e-mails com as notícias mais recentes do mundo tech!</p>
+            </div>
+
+            <div class="main-content form-card">
+                <form>
+                    <fieldset class="grupo">
+                        <p>Suas Informações:</p>
+                        <label for="nome">
+                            Nome <input type="text" id="nome" name="nome" required>
+                        </label>
+                        
+                        <label for="nome">
+                            Sobrenome <input type="text" id="nome" name="nome" required>
+                        </label>
+                        <br>
+                        <label for="email">
+                            E-mail <input type="email" name="email" id="email" required>
+                        </label>
+                        
+                    </fieldset>
+                        
+                <fieldset class="grupo">
+                    <br>
+                    <label for="genero">
+                        <p>Gênero:</p>
+                        <label><input type="radio" name="genero" value="Masculino">Masculino</label> 
+                        <label><input type="radio" name="genero" value="Feminino">Feminino</label> 
+                        <label><input type="radio" name="genero" value="Nenhum">Prefiro não dizer</label>
+                    </label>
+                </fieldset>
+                
+                <fieldset class="grupo">
+                    <br><p>Marque os tipos de conteúdo que deseja receber:</p>
+                
+                    <input type="checkbox" id="Conteudo1" value="Jogos">
+                    <label for="Conteudo1"> Jogos </label>
+
+                    <input type="checkbox" id="Conteudo2" value="Eletrônicos">
+                    <label for="Conteudo2"> Eletrônicos </label>
+                    
+                    <input type="checkbox" id="Conteudo3" value="Celulares">
+                    <label for="Conteudo3"> Celulares </label>
+
+                    <input type="checkbox" id="Conteudo4" value="Informática">
+                    <label for="Conteudo4"> Informática </label>
+                </fieldset>
+                
+                <br>
+
+                <input class="submit-button" type="submit" value="ENVIAR">
+            </form>
+            </div>
+    </body>
+</html>

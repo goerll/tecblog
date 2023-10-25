@@ -9,6 +9,9 @@
 
 a{
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 body{
@@ -50,29 +53,24 @@ body{
 }
 
 .page-subheading{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 300;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* This sets the overlay color and opacity */
-  opacity: 0; /* Initially, the overlay is invisible */
-  transition: opacity 0.3s ease; /* Add a smooth transition for the opacity change */
 }
 
 .thumbnail{
   object-fit: cover;
   position: relative;
+  overflow: hidden;
+}
+
+.thumbnail img{
+  object-fit: cover;
+  height: 100%;
 }
 
 .thumbnail img:hover{
   transition: all 0.3s;
-  filter: brightness(0.5);
+  filter: brightness(0.6);
 }
 
 .thumbnail-title{
@@ -85,6 +83,7 @@ body{
   text-align: left;
   padding: 10px;
   margin: 10px;
+  text-shadow:2px 2px 5px #3b3b3b;
 }
 
 .thumbnail-subtitle{
@@ -98,6 +97,12 @@ body{
   text-align: left;
   padding: 10px;
   margin: 10px;
+
+  text-shadow:2px 2px 5px #000000;
+}
+
+.paragraph{
+  color: rgb(167, 167, 167);
 }
 
 .grid-item{
@@ -115,6 +120,8 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  gap: 15px;
+  padding-bottom: 15px;
 }
 
 footer{
@@ -159,6 +166,108 @@ footer{
 #footer a{
   color: #6a6a6a;
   text-decoration: underline;
+}
+
+/* Jogos */
+.page-article{
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-article-image{
+  object-fit: cover;
+  width: 100%;
+  transition: all 0.3s;
+  border-width: 2px;
+  border-color: #ff5100;
+  height: 400px;
+}
+
+.page-article-image:hover{
+  transform: scale(1.2);
+  filter: brightness(0.6);
+}
+
+.page-article-title{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  text-shadow:2px 2px 5px #000000;
+}
+
+.main-content{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Newsletter */
+form fieldset{
+  outline: 0;
+  border-width: 0;
+  font-size: 25px;
+}
+
+form label{
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+form p{
+  font-size: 30px;
+}
+
+form input{
+  background-color: #151515;
+  padding: 3px;
+  border: #ff5100 solid 1px;
+  border-radius: 5px;
+  color: white;
+}
+
+.form-card{
+  border: #2a2a2a solid 10px;
+  border-radius: 20px;
+  background-color: #151515;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 800px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#email{
+  min-width: 470px;
+}
+
+#radio{
+  padding: 20px;
+}
+
+.submit-button{
+  color: white;
+  background-color: #ff5100;
+  border-color: #ff5100;
+  font-size: 20px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 5px;
+  font-weight: 700;
+  min-width: 500px;
+  transition: all 0.2s;
+}
+
+.submit-button:hover{
+  cursor: pointer;
 }
 
 /*Formatação do menu */
